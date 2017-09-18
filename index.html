@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>dotty2js basics sample</title>
+    </head>
+    <body>
+        <script>
+        function SpiralCircle() {
+            var children = {
+
+        }
+            var dependencies = {
+
+        }
+
+
+        function Petal() {
+            var children = {
+            }
+            var dependencies = {
+            }
+        }
+
+            (function (parent) {
+                return parent.appendChild(
+                    (function (parent) {return parent.appendChild(document.createTextNode('Hello dotty2js'))})(
+                    document.createElement(
+                        'div'
+                    ).appendChild(
+                        document.createElement(
+                            "div"
+                        )
+                    )
+                )
+
+
+                (function (parent) {return parent.appendChild(document.createTextNode('SpiralCircle'))})(
+                    document.createElement(
+                        'div'
+                    ).appendChild(
+                        document.createElement(
+                            "div"
+                        )
+                    )))
+                })
+                    (document.body.appendChild(
+                        document.createElement(
+                            "div"
+                        )
+                    ))
+
+        }
+
+        SpiralCircle()
+        </script>
+    </body>
+</html>
